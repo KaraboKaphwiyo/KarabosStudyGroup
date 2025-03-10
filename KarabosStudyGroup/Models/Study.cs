@@ -25,5 +25,9 @@ namespace KarabosStudyGroup.Models
         [Display(Name = "Student Number")]
 
         public string StudentNumber { get; set; }
+
+        [Display(Name = "Link")]
+
+        public string myLink {  get; set; }
     }
 }

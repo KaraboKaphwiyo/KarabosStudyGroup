@@ -3,6 +3,17 @@
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #ffe6e6;
+
+}
+
+header{
+    background-color: #ffe6e6;
+}
+
+body{
+    background-color : #ffe6e6;
+    color : #333;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -18,3 +29,119 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Style the table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #cb7b7b; /*darkred background*/
+    color: white;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Table headers */
+thead tr {
+    background-color:#ddd ;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    text-align: left;
+}
+
+/* Style the button */
+button {
+    background-color: #4f2121; /*pink*/
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+   background-color: darkred;
+}
+
+/* Style dropdown options */
+.styled-dropdown option {
+    color: darkred;
+    font-weight:bold;
+}
+
+/*Style the dropdown itself */
+.styled-dropdown {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    nav ul li {
+        position: relative;
+        display: inline-block;
+    }
+
+        nav ul li a {
+            color: darkred;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%; /* Ensures dropdown appears right below */
+        left: 0;
+        background-color: darkred;
+        min-width: 150px; /* Prevents shrinking */
+        z-index: 1000; /* Ensures dropdown appears above other elements */
+    }
+
+        nav ul ul li {
+            display: block;
+            width: 100%;
+        }
+
+            nav ul ul li a {
+                color: white;
+                padding: 10px;
+                display: block;
+                text-decoration: none;
+            }
+
+            nav ul ul li:hover {
+                background-color: #e5bebe; /* Adds hover effect */
+            }
+
+    /* Fix: Ensure dropdown stays open when moving mouse */
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+    /* Optional: Smooth animation */
+    nav ul ul {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav ul li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+    }

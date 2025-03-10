@@ -1,0 +1,180 @@
+﻿
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    font-size: 18px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+    nav ul li {
+        display: inline;
+    }
+
+        nav ul li a {
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-right:4px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Remove border from last item */
+        nav ul li:last-child a {
+            border-right: none;
+        }
+
+        /* Active & Hover Effects */
+        nav ul li a:hover {
+            background-color: grey;
+        }
+
+        nav ul li a.active {
+            background-color: black;
+        }
+
+/* Page Layout */
+.content {
+    padding: 20px;
+}
+
+/* Biography & Hobbies Sections */
+.bio-section, .hobbies-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .bio-section img {
+        margin-right: 20px;
+    }
+
+    .hobbies-section img {
+        margin-left: 20px;
+    }
+
+/* Image Flip Effect */
+.flip-img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+    .flip-img:hover {
+        transform: rotateY(180deg);
+    }
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .bio-section, .hobbies-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .bio-section img, .hobbies-section img {
+            margin: 0 0 10px 0;
+        }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 30px; /* Equal spacing between sections */
+    padding: 15px;
+    border: 6px solid darkred;
+    border-radius: 5px;
+    background: lightpink;
+}
+
+/* Box styling for each heading */
+.heading-box {
+    font-style:italic;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px; /* Space between heading and content */
+    background: lightpink;
+}
+
+h2 {
+    color: #d32f2f;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content div {
+    display : block; /*makes paragraphs be stacked*/
+    width : 100%;
+}
+
+.content p{
+    display: block;
+    margin-bottom: 10px; /*adds space between paragraphs*/
+}
+
+
+/* Image styling with flip effect */
+.flip-image {
+    width: 150px; /* can always adjust size */
+    height: 150px;
+    transition: transform 0.5s ease-in-out;
+    margin-right : 10px;/*Space on right side of image*/
+    margin-left: 10px; /*Space on left side of image*/
+    margin-top: 50px; /*Moves image lower*/
+    
+}
+
+    .flip-image:hover {
+        transform: scaleX(-1);
+    }
+
+/* Modules section styling */
+.modules {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    width: 48%;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 5px;
+}
+

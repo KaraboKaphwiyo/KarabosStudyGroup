@@ -145,6 +145,18 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\HTML\Images\coding.jpeg" />
+    <Content Include="Content\HTML\Images\content.jpeg" />
+    <Content Include="Content\HTML\Images\Jeremy_Meeks_Mug_Shot.jpg" />
+    <Content Include="Content\HTML\Images\Karabo.jpg" />
+    <Content Include="Content\HTML\Images\mancity.png" />
+    <Content Include="Content\HTML\Images\Moeletsi.jpg" />
+    <Content Include="Content\HTML\Images\Ndalo.jpeg" />
+    <Content Include="Content\HTML\Images\neon.jpeg" />
+    <Content Include="Content\HTML\Images\psychology.jpeg" />
+    <Content Include="Content\HTML\Images\Thato.jpeg" />
+    <Content Include="Content\HTML\Images\Trading.jpg" />
+    <Content Include="Content\NewStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -165,6 +177,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Content\HTML\Dumo.html" />
+    <Content Include="Content\HTML\Karabo.html" />
+    <Content Include="Content\HTML\Moeletsi.html" />
+    <Content Include="Content\HTML\Ndalo.html" />
+    <Content Include="Content\HTML\Thato.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -180,6 +197,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Students\StudyView.cshtml" />
+    <Content Include="Views\Students\WelcomeView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
